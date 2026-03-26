@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale 1.0">
+        <title>JavaScript Calculator</title>
+        <!--Links css to the HTML-->
+        <link rel="stylesheet" href="style.css">
+        <!--Links javaScript to the HTML-->
+        <script src="script.js" defer></script>
+    </head>
+        <body>
+            <!--Id for the calculator to sytle the calculator as a whole-->
+            <div id="calculator">
+                <!--id to display the numbers and operations of the calculator-->
+                <div id="display"></div>
+                <!--the keys sets the rows and columns of the buttons-->
+                <div id="keys">
+                    <!--the operator '+' adds num1 to num2-->
+                    <button onclick="operator('+')" class="operator-btn">+</button>
+                    <!--shows the number '7' to display-->
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <!--shows the number '8' to display-->
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <!--shows the number '9' to display-->
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <!--the operator '-' subtracts num1 to num2-->
+                    <button onclick="operator('-')" class="operator-btn">-</button>
+                    <!--shows the number '4' to display-->
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <!--shows the number '5' to display-->
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <!--shows the number '6' to display-->
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <!--the operator '*' multiplies num1 to num2-->
+                    <button onclick="operator('*')" class="operator-btn">*</button>
+                    <!--shows the number '1' to display-->
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <!--shows the number '2' to display-->
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <!--shows the number '3' to display-->
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <!--the operator '/' divides num1 to num2-->
+                    <button onclick="operator('/')" class="operator-btn">/</button>
+                    <!--shows the double zeros ('00') to display-->
+                    <button onclick="appendToDisplay('00')">00</button>
+                    <!--shows the number '0' to display-->
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <!--with the click of ., the decimal point shows on the screen.-->
+                    <!-- <button onclick="appendToDisplay('.')">.</button> -->
+                    <!--Delete (backspace)-->
+                    <!-- <button onclick="deleteSpace()" class="delete-btn">DE</button> -->
+                    <!--with the click of '=', the solution of the expression can be found-->
+                    <button onclick="calculate()" id="calculate-btn">=</button>
+                    <!--clears the display back to showing 0-->
+                    <button onclick="clearDisplay()" class="clear-btn">AC</button>
+                    
+                </div>
+            </div>
+        </body>
+</html>
+
